@@ -13,3 +13,6 @@ warnings.filterwarnings('ignore')
 
 data = pd.read_excel('test.xlsx')
 data.head()
+
+y = data['Target']
+X = data.drop('Target', axis = 1)
